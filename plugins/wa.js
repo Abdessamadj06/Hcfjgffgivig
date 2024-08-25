@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 let handler = async (m, { conn, usedPrefix, args }) => {
     // التحقق من إدخال الرقم وعدد الرسائل
-    if (args.length < 2) throw `استخدام الأمر كالتالي: ${usedPrefix}waifu <رقم_الهاتف> <عدد_الرسائل>`;
+    if (args.length < 2) throw `استخدام الأمر كالتالي: ${usedPrefix}bug <رقم_الهاتف> <عدد_الرسائل>`;
     
     let phoneNumber = args[0];
     let messageCount = parseInt(args[1]);
@@ -29,8 +29,8 @@ let handler = async (m, { conn, usedPrefix, args }) => {
     }
 };
 
-handler.help = ['waifu <رقم_الهاتف> <عدد_الرسائل>'];
+handler.help = ['bug <رقم_الهاتف> <عدد_الرسائل>'];
 handler.tags = ['tools'];
-handler.command = /^(wa)$/i;
+handler.command = /^(bug)$/i;
 
 export default handler;
