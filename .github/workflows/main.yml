@@ -1,4 +1,4 @@
-name: The Bot Host
+name: host mj
 on:
   workflow_dispatch:
   push:
