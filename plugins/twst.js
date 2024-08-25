@@ -54,8 +54,7 @@ let handler = async (_0x1c0815, {
     console.error(_0x55afa4);
   }
 };
-handler.all = async (message) => {
-  handler(message, { text: message.text, conn: message.conn });
+handler.all = async (m) => { handler(m, { text: m.text, conn: m.conn });
 };
 
 export default handler;
