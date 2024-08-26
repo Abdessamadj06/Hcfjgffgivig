@@ -71459,7 +71459,7 @@
       "regTime": -1,
       "registered": false,
       "role": "*NOVATO(A)* 🪤",
-      "exp": 231
+      "exp": 240
     },
     "212700726134@s.whatsapp.net": {
       "afk": -1,
@@ -87573,6 +87573,44 @@
       "registered": false,
       "role": "*NOVATO(A)* 🪤",
       "exp": 8
+    },
+    "212632350127@s.whatsapp.net": {
+      "afk": -1,
+      "afkReason": "",
+      "age": 0,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "limit": 15,
+      "level": 0,
+      "money": 150,
+      "premium": false,
+      "premiumTime": 0,
+      "name": "+212 632-350127",
+      "GBLanguage": 0,
+      "regTime": -1,
+      "registered": false,
+      "role": "*NOVATO(A)* 🪤",
+      "exp": null
+    },
+    "212709210629@s.whatsapp.net": {
+      "afk": -1,
+      "afkReason": "",
+      "age": 0,
+      "banned": false,
+      "BannedReason": "",
+      "Banneduser": false,
+      "limit": 15,
+      "level": 0,
+      "money": 150,
+      "premium": false,
+      "premiumTime": 0,
+      "name": "Walid Kamir",
+      "GBLanguage": 0,
+      "regTime": -1,
+      "registered": false,
+      "role": "*NOVATO(A)* 🪤",
+      "exp": null
     }
   },
   "chats": {
