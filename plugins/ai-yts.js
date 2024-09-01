@@ -13,27 +13,20 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
         let listSections = [];
         for (let index in ytres) {
             let v = ytres[index];
-            
-            // إعداد الصورة المصغرة
-            let messa = await prepareWAMessageMedia({ image: { url: v.thumbnail } }, { upload: conn.waUploadToServer });
-
-            // إنشاء الرسالة التفاعلية
             listSections.push({
                 title: `Results`,
                 rows: [
                     {
                         header: 'Audio',
-                        title: v.title,
-                        description: `${v.title} | ${v.timestamp}\n`,
-                        id: `${usedPrefix}ytmp3 ${v.url}`,
-                        image: messa.imageMessage
+                        title: "",
+                        description: `${v.title} | ${v.timestamp}\n`, 
+                        id: `${usedPrefix}ytmp3 ${v.url}`
                     },
                     {
                         header: "Video",
-                        title: v.title,
-                        description: `${v.title} | ${v.timestamp}\n`,
-                        id: `${usedPrefix}ytmp4 ${v.url}`,
-                        image: messa.imageMessage
+                        title: "" ,
+                        description: `${v.title} | ${v.timestamp}\n`, 
+                        id: `${usedPrefix}ytmp4 ${v.url}`
                     }
                 ]
             });
@@ -46,7 +39,5 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
 };
 
 handler.command = /^playlist|ytbuscar|yts(earch)?$/i;
-handler.help = yts;
-handler.tags = download;
 
 export default handler;
